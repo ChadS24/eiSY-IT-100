@@ -1,0 +1,17 @@
+<editors>
+    <editor id="BOOL">
+        <range uom="2" subset="0,1" />
+    </editor>
+    <editor id="TROUBLE">
+        <range uom="2" subset="0,1" nls="TRBL" />
+    </editor>
+    <editor id="PSTATE">
+        <range uom="25" subset="0-10" nls="PSTATE" />
+    </editor>
+    <editor id="ZSTATE">
+        <range uom="25" subset="0,1" nls="ZSTATE" />
+    </editor>
+    <editor id="USER">
+        <range uom="70" min="0" max="9999" prec="0" />
+    </editor>
+</editors>

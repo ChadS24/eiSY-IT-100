@@ -1,0 +1,67 @@
+<nodeDefs>
+    <!-- Panel / controller -->
+    <nodeDef id="dscpanel" nls="ctl">
+        <editors />
+        <sts>
+            <st id="ST" editor="BOOL" />
+            <st id="GV0" editor="BOOL" />
+            <st id="GV1" editor="TROUBLE" />
+            <st id="GV2" editor="TROUBLE" />
+            <st id="GV3" editor="TROUBLE" />
+            <st id="GV4" editor="TROUBLE" />
+            <st id="GV5" editor="TROUBLE" />
+        </sts>
+        <cmds>
+            <sends />
+            <accepts>
+                <cmd id="QUERY" />
+                <cmd id="DISCOVER" />
+                <cmd id="SET_TIME" />
+            </accepts>
+        </cmds>
+    </nodeDef>
+
+    <!-- Partition -->
+    <nodeDef id="dscpart" nls="part">
+        <editors />
+        <sts>
+            <st id="ST" editor="PSTATE" />
+            <st id="GV0" editor="USER" />
+            <st id="GV1" editor="TROUBLE" />
+        </sts>
+        <cmds>
+            <sends>
+                <cmd id="DON" />
+                <cmd id="DOF" />
+            </sends>
+            <accepts>
+                <cmd id="DISARM" />
+                <cmd id="ARM_AWAY" />
+                <cmd id="ARM_STAY" />
+                <cmd id="ARM_NED" />
+                <cmd id="CHIME" />
+                <cmd id="QUERY" />
+            </accepts>
+        </cmds>
+    </nodeDef>
+
+    <!-- Zone -->
+    <nodeDef id="dsczone" nls="zone">
+        <editors />
+        <sts>
+            <st id="ST" editor="ZSTATE" />
+            <st id="GV0" editor="BOOL" />
+            <st id="GV1" editor="BOOL" />
+            <st id="GV2" editor="BOOL" />
+        </sts>
+        <cmds>
+            <sends>
+                <cmd id="DON" />
+                <cmd id="DOF" />
+            </sends>
+            <accepts>
+                <cmd id="QUERY" />
+            </accepts>
+        </cmds>
+    </nodeDef>
+</nodeDefs>

@@ -1,0 +1,12 @@
+%YAML 1.1
+---
+# ser2net bridge for the DSC IT-100 (install as /etc/ser2net.yaml on the Raspberry Pi).
+# /dev/it100 is a udev symlink to the IT-100's FTDI USB-serial adapter.
+# kickolduser: a reconnecting plugin replaces a stale connection instead of being refused.
+
+connection: &it100
+    accepter: tcp,10001
+    enable: on
+    connector: serialdev,/dev/it100,9600n81,local
+    options:
+      kickolduser: true

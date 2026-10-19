@@ -1,0 +1,27 @@
+{
+    "name": "DSC IT-100",
+    "docs": "README.md",
+    "type": "python3",
+    "executable": "dsc-it100.py",
+    "install": "install.sh",
+    "description": "DSC alarm panel through an IT-100 module, reached over TCP (ser2net)",
+    "shortPoll": "60",
+    "longPoll": "600",
+    "logLevel": "INFO",
+    "profile_version": "1.0.0",
+    "customParams": {
+        "host": "",
+        "port": "10001",
+        "usercode": "",
+        "partitions": "1",
+        "zones": "auto"
+    },
+    "credits": [
+        {
+            "title": "DSC IT-100 plugin",
+            "author": "Chad Sauerbry",
+            "version": "1.0.0",
+            "date": "October 2026"
+        }
+    ]
+}

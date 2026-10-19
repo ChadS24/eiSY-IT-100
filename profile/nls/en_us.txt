@@ -1,0 +1,54 @@
+# Panel (controller)
+ND-dscpanel-NAME = DSC Panel
+ST-ctl-ST-NAME = Plugin Online
+ST-ctl-GV0-NAME = IT-100 Connected
+ST-ctl-GV1-NAME = AC Power
+ST-ctl-GV2-NAME = Panel Battery
+ST-ctl-GV3-NAME = Bell Circuit
+ST-ctl-GV4-NAME = System Tamper
+ST-ctl-GV5-NAME = Keybus
+CMD-ctl-QUERY-NAME = Query
+CMD-ctl-DISCOVER-NAME = Re-read Zone Labels
+CMD-ctl-SET_TIME-NAME = Set Panel Clock
+
+TRBL-0 = OK
+TRBL-1 = Trouble
+
+# Partition
+ND-dscpart-NAME = DSC Partition
+ST-part-ST-NAME = Partition State
+ST-part-GV0-NAME = Last Arm/Disarm User
+ST-part-GV1-NAME = Trouble
+CMD-part-DISARM-NAME = Disarm
+CMD-part-ARM_AWAY-NAME = Arm Away
+CMD-part-ARM_STAY-NAME = Arm Stay
+CMD-part-ARM_NED-NAME = Arm No Entry Delay
+CMD-part-CHIME-NAME = Toggle Door Chime
+CMD-part-QUERY-NAME = Query
+CMD-part-DON-NAME = Alarm
+CMD-part-DOF-NAME = Disarmed
+
+PSTATE-0 = Not Ready
+PSTATE-1 = Ready
+PSTATE-2 = Ready (Force Arm)
+PSTATE-3 = Exit Delay
+PSTATE-4 = Entry Delay
+PSTATE-5 = Armed Away
+PSTATE-6 = Armed Stay
+PSTATE-7 = Armed Away (No Entry Delay)
+PSTATE-8 = Armed Stay (No Entry Delay)
+PSTATE-9 = Alarm
+PSTATE-10 = Busy
+
+# Zone
+ND-dsczone-NAME = DSC Zone
+ST-zone-ST-NAME = Zone
+ST-zone-GV0-NAME = In Alarm
+ST-zone-GV1-NAME = Tamper
+ST-zone-GV2-NAME = Fault
+CMD-zone-QUERY-NAME = Query
+CMD-zone-DON-NAME = Opened
+CMD-zone-DOF-NAME = Closed
+
+ZSTATE-0 = Closed
+ZSTATE-1 = Open
