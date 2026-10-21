@@ -1,4 +1,4 @@
-# DSC IT-100 plugin for eISY (PG3x)
+# IT100-Direct: DSC IT-100 plugin for eISY (PG3x)
 
 Talks to a DSC alarm panel through an IT-100 module directly, using the IT-100 protocol.
 The IT-100 stays on the Raspberry Pi's USB-serial port; `ser2net` on the Pi exposes it on TCP
@@ -74,7 +74,7 @@ time. Until step 1, the old setup keeps working unchanged.
    ```bash
    scp -r dsc-it100.py it100.py panel.py nodes profile server.json requirements.txt install.sh POLYGLOT_CONFIG.md README.md <eisy-user>@<eisy-ip>:dsc-it100/
    ```
-3. **PG3x: install it as a local plugin** from `/home/<eisy-user>/dsc-it100` (Developer → Add new plugin, Dev Mode, plugin user `<eisy-user>`) into a free slot.
+3. **PG3x: install it as a local plugin** from `/home/<eisy-user>/dsc-it100` (Developer → Add new plugin: name `IT100-Direct`, store Local, Dev Mode, plugin user `<eisy-user>`; not the unrelated "DSC-IT100" in the Beta store) into a free slot.
 4. **Configure** `usercode` (and check `host`/`port`), then restart the plugin. Zone nodes appear
    about 5 seconds after it connects.
 5. **Move programs and scenes** from the old plugin's nodes (`n004_...`) to the new ones, then

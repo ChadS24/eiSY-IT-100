@@ -1,5 +1,5 @@
 {
-    "name": "DSC IT-100",
+    "name": "IT100-Direct",
     "docs": "README.md",
     "type": "python3",
     "executable": "dsc-it100.py",
